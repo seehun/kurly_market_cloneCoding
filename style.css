@@ -365,7 +365,7 @@ nav{
     gap:18px;    
 }
 
-.deadline-sale-sample-content{
+.sample-content{
     flex-grow: 1;
     flex-basis: 0;
     /* border:1px solid blue; */
@@ -380,10 +380,15 @@ nav{
     width:249px;
     height:auto;
     position:relative;
+    overflow: hidden;
 }
 .item-image img{
     width:100%;
     height:inherit;
+}
+.item-image img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .item-cart{
@@ -473,11 +478,10 @@ nav{
     gap:15px;
 }
 
-.daily-specials-sample-content{
+/* .daily-specials-sample-content{
     flex-grow: 1;
     flex-basis: 0;
-    /* border:1px solid red; */
-}
+} */
 
 .daily-specials-card{
     display: flex;
