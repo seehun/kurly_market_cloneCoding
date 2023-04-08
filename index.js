@@ -1,11 +1,15 @@
 //banner image change
 
-const banner_images = [
+let banner_images = [
   ['https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/1e97c25c-b29e-4ae9-a3c6-281fdab06f39.jpg',1],
   ['https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/eb19db69-dd28-4d6d-b0ee-69e8bf05323d.jpg',2],
   ['https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/80ecd564-e0cd-4935-b7ed-5f0c4268adef.jpg',3],
 ];
 
+//spread 연산자 실습
+banner_images = [...banner_images, 
+['https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/6dd20495-01e5-48c4-9d9e-ec71b066668e.jpg',4]
+]
 
 const mainImage = document.querySelector('#main-image');
 mainImage.src = banner_images[0][0]
@@ -88,7 +92,6 @@ const countDown=()=>{
   timeExpression(totalSecond);
   if(totalSecond===0){
     clearInterval(timer);
-    console.log('finish!!!!!')
     alert('마감!')
   }
 
